@@ -42,9 +42,16 @@ void main()
        int amount;
        printf("\nEnter the amount you want to withdraw:");
        scanf("%d",&amount);
+       if(amount>balance)
+       {
+           printf("Insufficient Balance"\n);
+       }
+       else
+       {
        balance -= amount;
        printf("Your balance after withdraw:%d\n",balance);   //To check balance after withdrawal
-
+       }
+       break;
    }
 
    else if(selectednumber == 3)
